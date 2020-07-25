@@ -8,8 +8,9 @@
 import random
 correctNum = random.randrange(0,100)
 guestNum = 101
-count = 1
+count = 0
 while correctNum != guestNum:
+    count += 1
     temp = input("第" + str(count) + "次猜，请输入一个整形数字: ")
     try:
         guestNum = int(temp)
