@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2019--2023, Luoo.
 # All rights reserved.
-# 龟兔赛跑
+'''
+龟兔赛跑
+'''
 temp = input('请输入：')
 inputArr = temp.split( )
 v1 = int(inputArr[0])
@@ -11,7 +13,7 @@ t = int(inputArr[2])
 s = int(inputArr[3])
 l = int(inputArr[4])
 # 比赛耗时
-time = 0 
+time = 0
 win = ''
 # 兔子进行跑步得耗时
 j = 1
@@ -20,7 +22,7 @@ wait = 0
 # 根据乌龟耗时进行循环
 for i in range(1, int(l/v2) + 1):
     # 耗时加1
-    time += 1 
+    time += 1
     if v1*j == l:
         # 兔子抵达终点
         break
